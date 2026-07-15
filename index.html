@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EF Dental — Klinik Utama Rawat Jalan Gigi &amp; Mulut, Kediri</title>
+<meta name="description" content="Klinik Utama Rawat Jalan EF Dental, Kediri. Orthodontic &amp; Aesthetic Dental Centre. Jl. Kilisuci, Ruko Garden Ville A5, Jamsaren, Pesantren, Kota Kediri.">
+<link rel="canonical" href="https://efdental.id/">
+<link rel="icon" type="image/png" href="logo.png">
+<meta property="og:title" content="EF Dental — Klinik Gigi Kediri">
+<meta property="og:description" content="Klinik Utama Rawat Jalan gigi &amp; mulut di Kota Kediri. Reservasi mudah lewat WhatsApp.">
+<meta property="og:url" content="https://efdental.id/">
+<meta property="og:image" content="https://efdental.id/logo.png">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dentist",
+  "name": "Klinik Utama Rawat Jalan EF Dental",
+  "alternateName": "EF Dental",
+  "url": "https://efdental.id/",
+  "telephone": "+6281224199191",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Jalan Kilisuci, Ruko Garden Ville A5, Kel. Jamsaren, Kec. Pesantren",
+    "addressLocality": "Kota Kediri",
+    "addressRegion": "Jawa Timur",
+    "postalCode": "64129",
+    "addressCountry": "ID"
+  },
+  "parentOrganization": { "@type": "Organization", "name": "CV Bahtera Berkah Medika" },
+  "sameAs": ["https://www.instagram.com/ef.dental/"]
+}
+</script>
+<style>
+  :root{
+    --hijau:#004133;      /* hijau klinik */
+    --hijau-tua:#00281f;  /* bayangan hijau */
+    --tinta:#0b2b23;      /* teks di latar terang */
+    --emas:#d5aa2a;       /* emas EF */
+    --emas-tua:#a8841f;
+    --gading:#fbf9f4;     /* latar terang */
+    --garis:#e4ddcd;
+    --bayang:0 18px 50px rgba(0,40,31,.16);
+  }
+  *{ margin:0; padding:0; box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{
+    font-family:"Plus Jakarta Sans", system-ui, sans-serif;
+    background:var(--gading); color:var(--tinta);
+    -webkit-font-smoothing:antialiased; line-height:1.65;
+  }
+  a{ color:inherit; }
+  a:focus-visible, button:focus-visible{ outline:3px solid var(--emas); outline-offset:3px; border-radius:4px; }
+
+  /* ---------- HERO: papan nama klinik ---------- */
+  .hero{
+    background:
+      radial-gradient(1100px 480px at 50% -12%, rgba(213,170,42,.16), transparent 62%),
+      linear-gradient(178deg, var(--hijau) 0%, var(--hijau-tua) 100%);
+    padding:4.6rem 1.5rem 4.4rem;
+    text-align:center;
+  }
+  .plakat{
+    max-width:640px; margin:0 auto;
+    background:var(--gading);
+    border:1px solid rgba(213,170,42,.75);
+    outline:1px solid rgba(213,170,42,.35);
+    outline-offset:6px;
+    border-radius:4px;
+    box-shadow:var(--bayang);
+    padding:2.8rem 2rem 2.6rem;
+    animation:muncul .8s ease both;
+  }
+  @keyframes muncul{ from{ opacity:0; transform:translateY(14px);} to{ opacity:1; transform:none;} }
+  @media (prefers-reduced-motion: reduce){ .plakat{ animation:none; } }
+  .eyebrow{
+    font-size:.72rem; font-weight:700; letter-spacing:.34em; text-transform:uppercase;
+    color:var(--emas-tua); margin-bottom:1.4rem;
+  }
+  .logo{
+    width:min(360px, 78%); height:auto; display:block; margin:0 auto;
+  }
+  .rule{
+    width:64px; height:2px; background:var(--emas);
+    margin:1.6rem auto 1.3rem; border:0;
+  }
+  .tagline{
+    max-width:44ch; margin:0 auto;
+    font-size:1rem; color:#3d4f48;
+  }
+  .aksi{ margin-top:1.9rem; display:flex; gap:.8rem; justify-content:center; flex-wrap:wrap; }
+  .tombol{
+    display:inline-block; text-decoration:none; font-weight:700; font-size:.95rem;
+    padding:.85rem 1.6rem; border-radius:999px; transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .tombol:hover{ transform:translateY(-2px); }
+  .tombol-emas{ background:var(--emas); color:var(--hijau-tua); box-shadow:0 8px 22px rgba(213,170,42,.4); }
+  .tombol-emas:hover{ background:#e0b93f; }
+  .tombol-garis{ border:1.5px solid var(--hijau); color:var(--hijau); }
+  .tombol-garis:hover{ border-color:var(--emas-tua); color:var(--emas-tua); }
+
+  /* ---------- STRIP INFO ---------- */
+  .strip{
+    max-width:1000px; margin:-2.1rem auto 0; position:relative; z-index:2;
+    background:#fff; border:1px solid var(--garis); border-radius:14px;
+    box-shadow:var(--bayang);
+    display:grid; grid-template-columns:1.35fr 1fr 1fr;
+  }
+  .strip > div{ padding:1.35rem 1.5rem; }
+  .strip > div + div{ border-left:1px solid var(--garis); }
+  .label{
+    font-size:.68rem; font-weight:700; letter-spacing:.22em; text-transform:uppercase;
+    color:var(--hijau); opacity:.75; margin-bottom:.35rem;
+  }
+  .strip p{ font-size:.94rem; font-weight:500; }
+  .strip a.kecil{ font-size:.85rem; font-weight:700; color:var(--hijau); }
+  @media (max-width:760px){
+    .strip{ grid-template-columns:1fr; margin-left:1rem; margin-right:1rem; }
+    .strip > div + div{ border-left:0; border-top:1px solid var(--garis); }
+  }
+
+  /* ---------- ISI ---------- */
+  main{ max-width:1000px; margin:0 auto; padding:3.6rem 1.5rem 1rem; }
+  section{ margin-bottom:3.4rem; }
+  h2{
+    font-family:"Fraunces", serif; font-weight:600; font-size:1.7rem;
+    color:var(--hijau); margin-bottom:1.1rem; letter-spacing:.01em;
+  }
+  .layanan{
+    display:grid; grid-template-columns:1fr 1fr; gap:.35rem 2.5rem;
+    list-style:none;
+  }
+  .layanan li{
+    padding:.62rem 0 .62rem 1.5rem; position:relative;
+    border-bottom:1px dashed var(--garis); font-size:.98rem;
+  }
+  .layanan li::before{
+    content:""; position:absolute; left:0; top:1.05rem;
+    width:9px; height:9px; border-radius:50%;
+    background:var(--emas);
+  }
+  @media (max-width:640px){ .layanan{ grid-template-columns:1fr; } }
+
+  /*
+    Bagian "Tim Dokter" & "Galeri" disiapkan untuk nanti:
+    kirimkan nama dokter / foto / tautan video, bagian ini tinggal diaktifkan.
+  */
+
+  /* ---------- FOOTER ---------- */
+  footer{
+    background:var(--hijau-tua); color:rgba(251,249,244,.72);
+    text-align:center; padding:2.6rem 1.5rem; font-size:.85rem; line-height:1.9;
+  }
+  footer .merek{
+    font-family:"Fraunces", serif; color:var(--emas); font-size:1.15rem;
+    letter-spacing:.08em; margin-bottom:.4rem;
+  }
+  footer a{ color:var(--gading); font-weight:600; text-decoration:none; }
+  footer a:hover{ color:var(--emas); }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="plakat">
+    <p class="eyebrow">Klinik Utama Rawat Jalan</p>
+    <img class="logo" src="logo.png" alt="EF Dental — Orthodontic &amp; Aesthetic Dental Centre">
+    <hr class="rule">
+    <p class="tagline">Perawatan gigi dan mulut untuk keluarga di Kediri &mdash; ortodonti, estetika, dan perawatan gigi menyeluruh.</p>
+    <div class="aksi">
+      <a class="tombol tombol-emas" href="https://wa.me/6281224199191?text=Halo%20EF%20Dental%2C%20saya%20ingin%20bertanya%2Freservasi">Chat WhatsApp</a>
+      <a class="tombol tombol-garis" href="https://www.instagram.com/ef.dental/" rel="noopener">Instagram @ef.dental</a>
+    </div>
+  </div>
+</header>
+
+<div class="strip">
+  <div>
+    <p class="label">Alamat</p>
+    <p>Jl. Kilisuci, Ruko Garden Ville A5, Kel. Jamsaren, Kec. Pesantren, Kota Kediri, Jawa Timur 64129</p>
+    <a class="kecil" href="https://www.google.com/maps/search/?api=1&query=EF+Dental+Ruko+Garden+Ville+Kilisuci+Kediri" rel="noopener">Buka di Google Maps &rarr;</a>
+  </div>
+  <div>
+    <p class="label">Jam Layanan</p>
+    <p>Setiap hari<br>09.00 &ndash; 21.00 WIB</p>
+  </div>
+  <div>
+    <p class="label">WhatsApp Klinik</p>
+    <p><a href="https://wa.me/6281224199191" style="text-decoration:none; font-weight:700; color:var(--hijau);">0812&#8209;2419&#8209;9191</a></p>
+  </div>
+</div>
+
+<main>
+  <section>
+    <h2>Layanan Kami</h2>
+    <ul class="layanan">
+      <li>Pemeriksaan &amp; konsultasi gigi</li>
+      <li>Ortodonti &mdash; behel &amp; perapian gigi</li>
+      <li>Perawatan estetika gigi</li>
+      <li>Penambalan &amp; perawatan saluran akar</li>
+      <li>Scaling &amp; pembersihan karang gigi</li>
+      <li>Pencabutan &amp; bedah minor</li>
+      <li>Gigi tiruan &amp; mahkota</li>
+      <li>Perawatan gigi anak</li>
+    </ul>
+  </section>
+
+  <!-- SIAPKAN NANTI: Tim Dokter (daftar nama dokter) & Galeri (foto/video klinik) -->
+
+</main>
+
+<footer>
+  <p class="merek">EF&middot;DENTAL</p>
+  <p>
+    Klinik Utama Rawat Jalan EF DENTAL diselenggarakan oleh <strong>CV Bahtera Berkah Medika</strong><br>
+    Izin Operasional &mdash; Sertifikat Standar Usaha Klinik No. 03032500524450001<br>
+    <a href="https://wa.me/6281224199191">WhatsApp</a>
+  </p>
+  <p style="margin-top:.6rem; opacity:.6;">&copy; 2026 CV Bahtera Berkah Medika. Seluruh hak cipta.</p>
+</footer>
+
+</body>
+</html>
